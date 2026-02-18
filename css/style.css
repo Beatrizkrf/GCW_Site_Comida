@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu{
+    margin: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 5px;
+    padding: 7px;
+    background-color: #FFF8CF !important;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 60px;
+    padding: auto;
+}
+
+.opcoes_menu{
+    align-items: center !important;
+    justify-content: center;
+}
+
+/*inicio*/
+.inicio{
+    background-color: #96A856;
+}
+
+.img_home{
+    width: 100%;
+}
+
+.titulo_home{
+    color: #1E56CE;
+    width: 150%;
+    padding: 250px;
+    font-weight: bold;
+    margin-right: 30px;
+    
+}
+
+.regiao{
+    background-color: #F4EEDE;
+}
+
+h1{
+    text-align: center;
+    color: #1E56CE;
+    font-weight: bold;
+}
+
+p{
+    align-items: center;
+    text-align: justify;
+}
+
+.botoes{
+    align-items: center !important;
+    justify-content: center;
+    color: black !important;
+}
+
+
+footer{
+    background-color: #F4EEDE;
+     border-radius: 20px;
+     margin: 40px;
+     margin-left: 50px;
+     margin-right: 50px;
+     padding-bottom: 5px;
+     padding: 7px; 
+     text-align: center;
+}
