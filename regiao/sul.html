@@ -14,11 +14,14 @@
   </head>
   <body class="inicio_estado">
     <!-- MENU -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary menu menu_personalizado"
+    >
       <div class="container grupinho">
-        <a class="navbar-brand"
-          ><img class="logo" src="/css/img/logo.png" alt=""
-        /></a>
+        <a class="navbar-brand">
+          <img class="logo" src="/css/img/logo.png" alt="" />
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -30,18 +33,67 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav opcoes_menu">
-            <a class="nav-link op_menu" href="/index.html">Home</a>
-            <a class="nav-link dropdown-toggle op_menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Regiões
+            <a
+              class="nav-link op_menu opcao_menu_personalizada"
+              href="/index.html"
+            >
+              Home
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="norte.html">Norte</a></li>
-              <li><a class="dropdown-item" href="nordeste.html">Nordeste</a></li>
-              <li><a class="dropdown-item" href="centro.html">Centro-Oeste</a></li>
-              <li><a class="dropdown-item" href="sudeste.html">Sudeste</a></li>
-              <li><a class="dropdown-item" href="sul.html">Sul</a></li>
+
+            <a
+              class="nav-link dropdown-toggle op_menu opcao_menu_personalizada"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Regiões
+            </a>
+
+            <ul class="dropdown-menu dropdown_personalizado">
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="norte.html"
+                >
+                  Norte
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="nordeste.html"
+                >
+                  Nordeste
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="centro.html"
+                >
+                  Centro-Oeste
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="sudeste.html"
+                >
+                  Sudeste
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="sul.html"
+                >
+                  Sul
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -50,24 +102,94 @@
 
     <!-- 1 parte -->
     <section id="home">
-      <div class="container ">
+      <div class="container">
         <div class="row">
           <div class="col-sm-7">
             <h1 class="titulo">Comida Sulista</h1>
-            <p class="regiao_texto"> O Brasil é um mosaico cultural, com diferentes culturas, costumes, música e, 
-              claro, comida. A comida brasileira é o resultado de uma mistura de ingredientes europeus, 
-              indígenas e africanos. Muitos dos componentes das receitas e técnicas de preparo são de origem 
-              indígena, tendo sofrido modificações pelos portugueses e escravizados da África. <a href="https://rioandlearn.com/pt-br/pratos-tipicos-brasileiros/" target="_blank"> Explore a Fonte Aqui.</a></p>   
-            <a class="botao_estado" href="#">Estados e suas comidas Típicas</a>  
+            <p class="regiao_texto">
+              O Brasil é um mosaico cultural, com diferentes culturas, costumes,
+              música e, claro, comida. A comida brasileira é o resultado de uma
+              mistura de ingredientes europeus, indígenas e africanos. Muitos
+              dos componentes das receitas e técnicas de preparo são de origem
+              indígena, tendo sofrido modificações pelos portugueses e
+              escravizados da África.
+            </p>
           </div>
-          <div class="col-sm-5"><img class="img_home" src="/css/img/sul.jpg" alt=""></div>
+          <div class="col-sm-5">
+            <img class="img_home" src="/css/img/sul.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
 
+    <!--Parte 2 Estados-->
+    <section class="section_card">
+      <div class="container text-center">
+        <!-- PRIMEIRA LINHA (3 cards) -->
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/barreado_parana.jpg"
+                class="card_img"
+                alt="Moqueca"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Barreado</h5>
+                <p class="card_texto">
+                  Prato tradicional brasileiro com frutos do mar e temperos
+                  regionais.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Paraná</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/polenta_sc.jpg"
+                class="card_img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Polenta no fio</h5>
+                <p class="card_texto">
+                  Salgado brasileiro famoso feito com frango desfiado.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Santa Catarina</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/churrasco_gaucho.jpg"
+                class="card_img"
+                alt="Prato"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Churrasco Gaúcho</h5>
+                <p class="card_texto">
+                  Receita típica que representa a cultura gastronômica local.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Rio Grande do Sul</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <footer>
-        <h5>Desenvolvido por: Beatriz Krisan</h5>
+      <h5>Desenvolvido por: Beatriz Krisan</h5>
     </footer>
 
     <script

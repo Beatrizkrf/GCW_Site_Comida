@@ -39,9 +39,40 @@
 
 .opcoes_menu{
     display: flex !important;
+    position: relative;
     justify-content: center !important; 
     gap: 15px; /* espaço entre os botões */
     color: green;
+}
+
+
+/*dropdown*/
+
+.opcao_menu_personalizada:hover {
+  color: #f4a62a;
+}
+
+.dropdown_personalizado {
+  background-color: #f3eadb;
+  border: 2px solid #e4c32f;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 25px !important;
+}
+
+/* Itens internos */
+.item_dropdown_personalizado {
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: #96A856;
+  transition: 0.3s;
+  margin-bottom: -10px !important;
+}
+
+/* Hover dos itens */
+.item_dropdown_personalizado:hover {
+  background-color: #f4a62a;
+  color: white;
 }
 
 /*inicio*/
@@ -82,8 +113,8 @@ h1{
 
 p{
     padding: 150px;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 40px;
+    padding-right: 30px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: -120px;
@@ -158,27 +189,70 @@ footer{
 
 /*parte 2*/
 
-.botao_estado{
-    background-color: #96A856 !important;
-    color: rgb(246, 255, 246) !important;
-    font-size: 18px;
-    border-radius: 15px !important;
-    border: 2px solid  #e4c32f !important;
-    padding: 8px 10px !important;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    margin-top: -100px !important;
-    margin-left: 40px;
-}
-
 .inicio_estado{
     background-color: #F4EEDE;
     color: black;
 }
 
 .regiao{
-    display: flex;
     align-items: baseline !important;
     justify-content: baseline !important;
 }
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* Cards */
+
+.section_card{
+    margin-top: 70px;
+}
+
+.cardzinho{
+  width: 18rem;
+  border: 3px solid #f4a62a; 
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f3eadb;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito hover */
+.cardzinho:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do card */
+.cardzinho .card_img {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Título */
+.cardzinho .card-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Texto */
+.cardzinho .card_texto {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+/* Lista (Estado) */
+.cardzinho .nome_estado {
+  background-color: transparent !important;
+  font-weight: 500;
+  margin: 5px;
+}
+
 

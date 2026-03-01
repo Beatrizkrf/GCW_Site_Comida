@@ -14,11 +14,14 @@
   </head>
   <body class="inicio_estado">
     <!-- MENU -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary menu menu_personalizado"
+    >
       <div class="container grupinho">
-        <a class="navbar-brand"
-          ><img class="logo" src="/css/img/logo.png" alt=""
-        /></a>
+        <a class="navbar-brand">
+          <img class="logo" src="/css/img/logo.png" alt="" />
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -30,11 +33,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav opcoes_menu">
-            <a class="nav-link op_menu" href="/index.html">Home</a>
             <a
-              class="nav-link dropdown-toggle op_menu"
+              class="nav-link op_menu opcao_menu_personalizada"
+              href="/index.html"
+            >
+              Home
+            </a>
+
+            <a
+              class="nav-link dropdown-toggle op_menu opcao_menu_personalizada"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -42,16 +52,48 @@
             >
               Regiões
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="norte.html">Norte</a></li>
+
+            <ul class="dropdown-menu dropdown_personalizado">
               <li>
-                <a class="dropdown-item" href="nordeste.html">Nordeste</a>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="norte.html"
+                >
+                  Norte
+                </a>
               </li>
               <li>
-                <a class="dropdown-item" href="centro.html">Centro-Oeste</a>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="nordeste.html"
+                >
+                  Nordeste
+                </a>
               </li>
-              <li><a class="dropdown-item" href="sudeste.html">Sudeste</a></li>
-              <li><a class="dropdown-item" href="sul.html">Sul</a></li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="centro.html"
+                >
+                  Centro-Oeste
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="sudeste.html"
+                >
+                  Sudeste
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item item_dropdown_personalizado"
+                  href="sul.html"
+                >
+                  Sul
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -71,12 +113,6 @@
               dos componentes das receitas e técnicas de preparo são de origem
               indígena, tendo sofrido modificações pelos portugueses e
               escravizados da África.
-              <a
-                href="https://rioandlearn.com/pt-br/pratos-tipicos-brasileiros/"
-                target="_blank"
-              >
-                Explore a Fonte Aqui.</a
-              >
             </p>
           </div>
           <div class="col-sm-5">
@@ -87,142 +123,124 @@
     </section>
 
     <!--Parte 2 Estados-->
-    <section>
+    <section class="section_card">
       <div class="container text-center">
-        <div class="container text-center">
-          <div class="row row-cols-3">
-            <div class="col">
-              
-              <div class="card" style="width: 18rem">
-                <img src="/css/img/comida/moqueca_de_camarao_378_600_square.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Acre</li>
-                </ul>
+        <!-- PRIMEIRA LINHA (3 cards) -->
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/acre_baixaria.jpg"
+                class="card_img"
+                alt="Moqueca"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baixaria</h5>
+                <p class="card_texto">
+                  Prato tradicional brasileiro com frutos do mar e temperos
+                  regionais.
+                </p>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Acre</li>
+              </ul>
             </div>
+          </div>
 
-            <div class="col">
-              
-               <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Amazonas</li>
-                </ul>
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/tambaqui_amazonas.jpeg"
+                class="card_img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tambaqui assado na brasa</h5>
+                <p class="card_texto">
+                  Salgado brasileiro famoso feito com frango desfiado.
+                </p>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Amazonas</li>
+              </ul>
             </div>
+          </div>
 
-            </div>
-            <div class="col">
-
-               <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Amapá</li>
-                </ul>
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/camarao_bafo_amapa.jpg"
+                class="card_img"
+                alt="Prato"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Camarão no bafo</h5>
+                <p class="card_texto">
+                  Receita típica que representa a cultura gastronômica local.
+                </p>
               </div>
-            </div>
-
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Amapá</li>
+              </ul>
             </div>
           </div>
         </div>
-        
-        <div class="row row-cols-4">
-          <div class="col">
-            
-             <div class="card" style="width: 18rem">
-                <img src="/css/img/coxinha.webp" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Pará</li>
-                </ul>
+
+        <!-- segunda linha -->
+        <div class="row justify-content-center">
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/maniçoba_pará.jpg"
+                class="card_img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maniçoba</h5>
+                <p class="card_texto">
+                  Prato tradicional muito apreciado na região.
+                </p>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Pará</li>
+              </ul>
             </div>
-
           </div>
-          <div class="col">
 
-             <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Roraima</li>
-                </ul>
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/pirarucu rondonia.jpg"
+                class="card_img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pirarucu rondon</h5>
+                <p class="card_texto">
+                  Receita que faz parte da identidade cultural do estado.
+                </p>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Rondônia</li>
+              </ul>
             </div>
-
           </div>
-          
-          
-          <div class="col">
-            
-             <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Rondônia</li>
-                </ul>
+
+          <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card cardzinho">
+              <img
+                src="/css/img/comida/chambari_tocantins.jpg"
+                class="card_img"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chambari</h5>
+                <p class="card_texto">
+                  Receita que faz parte da identidade cultural do estado.
+                </p>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="nome_estado">Tocantins</li>
+              </ul>
             </div>
-
-          
           </div>
-          <div class="col">
 
-             <div class="card" style="width: 18rem">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Tocantins</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </section>
