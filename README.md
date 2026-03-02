@@ -1,1 +1,1 @@
- https://beatrizkrf.github.io/GCW_Site_Comida/
+https://gcw-site-comida.vercel.app/index.html
